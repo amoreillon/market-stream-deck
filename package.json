@@ -1,0 +1,19 @@
+{
+  "name": "market-stream-deck",
+  "version": "1.0.0",
+  "description": "Stream Deck plugin — intra-day stock ticker with colour coding",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch"
+  },
+  "devDependencies": {
+    "@elgato/streamdeck": "^2.0.4",
+    "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/node": "^22.0.0",
+    "rollup": "^4.0.0",
+    "tslib": "^2.6.0",
+    "typescript": "^5.4.0"
+  }
+}

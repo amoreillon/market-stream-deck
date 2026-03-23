@@ -1,0 +1,5 @@
+node_modules/
+.claude/
+.DS_Store
+com.alex.market-monitor.sdPlugin/bin/plugin.js
+com.alex.market-monitor.sdPlugin/bin/plugin.js.map

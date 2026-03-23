@@ -1,0 +1,41 @@
+{
+  "SDKVersion": 2,
+  "Author": "Alexandre",
+  "Name": "Market Monitor",
+  "Version": "1.0.0",
+  "Description": "Displays intra-day stock price change on a Stream Deck button.",
+  "Category": "Finance",
+  "CategoryIcon": "imgs/category",
+  "Icon": "imgs/plugin-icon",
+  "CodePath": "bin/plugin.js",
+  "Software": {
+    "MinimumVersion": "6.4"
+  },
+  "OS": [
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.15"
+    }
+  ],
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "Actions": [
+    {
+      "UUID": "com.alex.market-monitor.ticker",
+      "Name": "Ticker",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Shows intra-day % change for a stock. Click to open Yahoo Finance.",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/action-icon",
+          "TitleAlignment": "bottom"
+        }
+      ],
+      "PropertyInspectorPath": "actions/ticker/property-inspector/inspector.html",
+      "SupportedInMultiActions": false
+    }
+  ]
+}
