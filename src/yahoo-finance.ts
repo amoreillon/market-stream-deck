@@ -1,5 +1,6 @@
 export interface QuoteResult {
   symbol: string;
+  price: number;
   changePercent: number;
   marketOpen: boolean;
 }
@@ -37,7 +38,7 @@ export async function fetchQuote(symbol: string): Promise<QuoteResult> {
   const regular = meta.currentTradingPeriod?.regular;
   const marketOpen = regular ? now >= regular.start && now < regular.end : false;
 
-  return { symbol: meta.symbol, changePercent, marketOpen };
+  return { symbol: meta.symbol, price, changePercent, marketOpen };
 }
 
 interface YahooChartResponse {

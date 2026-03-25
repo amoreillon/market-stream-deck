@@ -36,6 +36,36 @@
       ],
       "PropertyInspectorPath": "actions/ticker/property-inspector/inspector.html",
       "SupportedInMultiActions": false
+    },
+    {
+      "UUID": "com.alex.market-monitor.fx-ticker",
+      "Name": "FX Rate",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Shows the current exchange rate for an FX pair (e.g. EURUSD=X). Click to open Yahoo Finance.",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/action-icon",
+          "TitleAlignment": "bottom"
+        }
+      ],
+      "PropertyInspectorPath": "actions/ticker/property-inspector/inspector.html",
+      "SupportedInMultiActions": false
+    },
+    {
+      "UUID": "com.alex.market-monitor.inverted-ticker",
+      "Name": "Ticker (Inverted)",
+      "Icon": "imgs/action-icon",
+      "Tooltip": "Like Ticker but red when up, green when down — for assets where lower is better (e.g. oil).",
+      "Controllers": ["Keypad"],
+      "States": [
+        {
+          "Image": "imgs/action-icon",
+          "TitleAlignment": "bottom"
+        }
+      ],
+      "PropertyInspectorPath": "actions/ticker/property-inspector/inspector.html",
+      "SupportedInMultiActions": false
     }
   ]
 }

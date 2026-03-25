@@ -4,7 +4,8 @@
   "description": "Stream Deck plugin — intra-day stock ticker with colour coding",
   "scripts": {
     "build": "rollup -c",
-    "watch": "rollup -c --watch"
+    "watch": "rollup -c --watch",
+    "deploy": "rollup -c && cp com.alex.market-monitor.sdPlugin/manifest.json ~/Library/Application\\ Support/com.elgato.StreamDeck/Plugins/com.alex.market-monitor.sdPlugin/manifest.json && cp com.alex.market-monitor.sdPlugin/bin/plugin.js ~/Library/Application\\ Support/com.elgato.StreamDeck/Plugins/com.alex.market-monitor.sdPlugin/bin/plugin.js"
   },
   "devDependencies": {
     "@elgato/streamdeck": "^2.0.4",
